@@ -5,8 +5,24 @@
     <UserSecretsId>aspnet-Core.JCarrollOnline-6D08FC09-EDC1-4403-9574-B40A6A237E1D</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="src\app\app.config.ts" />
+    <None Remove="src\app\components\login\index.ts" />
+    <None Remove="src\app\components\register\emailValidator.directive.ts" />
+    <None Remove="src\app\components\register\index.ts" />
+    <None Remove="src\app\components\register\passwordConfirmationValidator.directive.ts" />
+    <None Remove="src\app\components\register\passwordValidator.directive.ts" />
+    <None Remove="src\app\components\register\userNameValidator.directive.ts" />
+    <None Remove="src\app\guards\auth.guard.ts" />
+    <None Remove="src\app\guards\index.ts" />
+    <None Remove="src\app\models\index.ts" />
+    <None Remove="src\app\models\user.ts" />
+    <None Remove="src\app\services\index.ts" />
+  </ItemGroup>
+
 
   <ItemGroup>
+    <PackageReference Include="AfominDotCom.AspNetCore.AngularCLI" Version="1.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" PrivateAssets="All" />
@@ -16,6 +32,21 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
     <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\app.config.ts" />
+    <TypeScriptCompile Include="src\app\components\login\index.ts" />
+    <TypeScriptCompile Include="src\app\components\register\emailValidator.directive.ts" />
+    <TypeScriptCompile Include="src\app\components\register\index.ts" />
+    <TypeScriptCompile Include="src\app\components\register\passwordConfirmationValidator.directive.ts" />
+    <TypeScriptCompile Include="src\app\components\register\passwordValidator.directive.ts" />
+    <TypeScriptCompile Include="src\app\components\register\userNameValidator.directive.ts" />
+    <TypeScriptCompile Include="src\app\guards\auth.guard.ts" />
+    <TypeScriptCompile Include="src\app\guards\index.ts" />
+    <TypeScriptCompile Include="src\app\models\index.ts" />
+    <TypeScriptCompile Include="src\app\models\user.ts" />
+    <TypeScriptCompile Include="src\app\services\index.ts" />
   </ItemGroup>
 
 </Project>
